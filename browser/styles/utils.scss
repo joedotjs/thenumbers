@@ -1,0 +1,19 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-device-width: 480px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-device-width:480px) {
+    @content;
+  }
+}

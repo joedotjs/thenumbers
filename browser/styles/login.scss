@@ -1,0 +1,27 @@
+#login {
+
+  height: 100vh;
+  padding-top: 35vh;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+  font-size: 40px;
+
+  h3 {
+    margin: 5px 0;
+    font-size: 30px;
+  }
+
+  &:after {
+    content: "";
+    background: url(http://wallpoper.com/images/00/36/96/88/radiohead_00369688.jpg);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+}

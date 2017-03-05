@@ -1,0 +1,21 @@
+{
+  // http://eslint.org/docs/rules/
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": ["standard", "standard-react"],
+  "rules": {
+    "indent": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/react-in-jsx-scope": 0,
+    "space-before-function-paren": 0,
+    "semi": 0,
+    "padded-blocks": 0,
+    "jsx-quotes": 0,
+    "eol-last": 0,
+    "quotes": 0,
+    "react/prop-types": 0
+  }
+}

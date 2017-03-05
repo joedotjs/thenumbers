@@ -1,0 +1,25 @@
+#such-a-pretty-loader {
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .8);
+  @include clearfix;
+
+  div {
+    background: rgba(0, 0, 0, .75);
+    z-index: 2;
+  }
+
+  img, div {
+    display: block;
+    width: 400px;
+    height: 301px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+  }
+
+}

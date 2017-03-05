@@ -1,0 +1,224 @@
+#matchup {
+
+  width: 100%;
+  margin: 0 auto;
+
+  #skip-button {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -7.5%;
+    width: 15%;
+    padding: 15px;
+    background: white;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 14px;
+    outline: none;
+
+    @include mobile {
+      display: none;
+    }
+
+    @include desktop {
+      &:hover {
+        background: darken(white, 10%);
+      }
+    }
+
+  }
+
+  &:after {
+    content: "";
+    background: url(http://discosalt.com/wp-content/uploads/2013/11/radiohead-2.jpg);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #helpful-bar {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    h2, h3 {
+      color: white;
+      border: 1px solid white;
+      border-top: none;
+      font-weight: 200;
+      padding: 20px;
+      @include mobile {
+        clear: both;
+      }
+    }
+
+    h2 {
+      float: left;
+      border-left: none;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    h3 {
+      float: right;
+      padding: 15px 40px;
+      border-right: none;
+      background: white;
+      cursor: pointer;
+      font-weight: 200;
+      color: black;
+      a, a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      @include mobile {
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+        border: none;
+        text-align: center;
+        font-size: 2.5em;
+        background: white;
+      }
+    }
+
+    #skip-mobile {
+      margin-top: 80px;
+      @include desktop {
+        display: none;
+      }
+    }
+
+    #include-bsides {
+      clear: both;
+      float: left;
+      padding: 0;
+      border: 0;
+      @include clearfix;
+      span {
+        float: left;
+        display: block;
+        padding: 15px 20px;
+        &.active {
+          background: black;
+          color: white;
+        }
+      }
+      @include mobile {
+        margin-top: 5px;
+      }
+    }
+
+  }
+
+  .song {
+
+    width: 50%;
+    padding: 15px;
+    color: white;
+    float: left;
+    cursor: pointer;
+    height: 100vh;
+    padding-top: 10%;
+
+    @include mobile {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin-top: 30%;
+      padding-top: 0;
+      &:nth-child(3) {
+        margin-top: 10%;
+      }
+    }
+
+    @include desktop {
+      &:hover {
+        background: grey;
+        img {
+          width: 65%;
+        }
+      }
+      transition: background 0.2s;
+    }
+
+    img {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+      @include desktop {
+        transition: width 0.5s;
+      }
+      @include mobile {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+      }
+    }
+
+    h1, h2 {
+      font-weight: 200;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      @include mobile {
+        font-size: 4em;
+      }
+    }
+
+    h2 {
+      color: darken(white, 20%);
+      @include mobile {
+        font-size: 2em;
+      }
+    }
+
+  }
+
+  #undo-button {
+
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+
+    h3 {
+      text-align: center;
+      color: white;
+      font-size: 0.8em;
+      margin-bottom: 10px;
+    }
+
+    img {
+      background: white;
+      display: block;
+      width: 100%;
+      border-radius: 100%;
+    }
+
+    @include mobile {
+      h3 {
+        font-size: 1.5em;
+      }
+      left: 5%;
+    }
+
+  }
+
+}
